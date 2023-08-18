@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-interface UserState {
+export interface UserState {
   name: string;
 }
 
@@ -14,6 +14,7 @@ const userSlice = createSlice({
   reducers: {
     setName: (state, action: PayloadAction<string>) => {
       state.name = action.payload;
+      localStorage.setItem('userName', action.payload)
     },
   },
 });
