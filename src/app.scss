@@ -1,0 +1,41 @@
+.mainBlock {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+
+  h1 {
+    color: #333;
+  }
+
+  h2 {
+    color: #666;
+  }
+
+  .nameBlock {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    input {
+      height: 100%;
+    }
+  }
+  .userName {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: #007bff;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
